@@ -3,7 +3,7 @@ import Link from "next/link";
 type ButtonProps = {
   children: React.ReactNode;
   href?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "secondaryLight";
   type?: "button" | "submit";
   disabled?: boolean;
   className?: string;
@@ -18,6 +18,8 @@ const variants = {
   primary: "bg-gold text-graphite hover:bg-gold-dark",
   secondary:
     "border-2 border-graphite text-graphite hover:bg-graphite hover:text-white",
+  secondaryLight:
+    "border-2 border-white text-white hover:bg-white hover:text-graphite",
 };
 
 export default function Button({

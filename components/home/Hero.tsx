@@ -1,1 +1,0 @@
-import { features } from "../../lib/data";   // messy: ../ means "go up one folder"
