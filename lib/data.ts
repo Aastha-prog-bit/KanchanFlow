@@ -108,3 +108,82 @@ export const plans = [
     highlighted: false,
   },
 ];
+export const featureRows = [
+  {
+    title: "Quote to order in one click",
+    description:
+      "Build a priced quote from your product list, send it to the customer, and turn it into a confirmed work order the moment it is approved.",
+    points: [
+      "Reusable quote templates for repeat jobs",
+      "Automatic GST and discount calculation",
+      "Approval trail for every revision",
+    ],
+    mockupTitle: "Quote #Q-2041",
+    mockupLines: [
+      { label: "Customer", value: "Rao Fabricators" },
+      { label: "Steel brackets x 500", value: "₹1,95,000" },
+      { label: "GST 18%", value: "₹35,100" },
+      { label: "Total", value: "₹2,30,100" },
+    ],
+  },
+  {
+    title: "Bills of materials that stay attached",
+    description:
+      "Every quote carries its BOM, so costing, purchasing and production all work from the same list of parts and quantities.",
+    points: [
+      "Multi-level BOMs with raw material costs",
+      "Cost updates flow into open quotes",
+      "One BOM shared by sales and production",
+    ],
+    mockupTitle: "BOM: Gear housing",
+    mockupLines: [
+      { label: "Aluminium casting", value: "1 pc" },
+      { label: "Bearing 6204", value: "2 pcs" },
+      { label: "M8 bolts", value: "8 pcs" },
+      { label: "Material cost", value: "₹1,240" },
+    ],
+  },
+  {
+    title: "A pipeline your whole team can see",
+    description:
+      "Enquiries, quotes, work orders and dispatches sit on one board. Drag a job to the next stage and everyone sees the change.",
+    points: [
+      "Stages that match your own process",
+      "Overdue and stuck jobs highlighted",
+      "Filter by customer, owner or value",
+    ],
+    mockupTitle: "Pipeline",
+    mockupLines: [
+      { label: "Quoted", value: "14 jobs" },
+      { label: "In production", value: "9 jobs" },
+      { label: "Ready to ship", value: "4 jobs" },
+      { label: "Delayed", value: "2 jobs" },
+    ],
+  },
+  {
+    title: "Customer updates on WhatsApp",
+    description:
+      "Send quotes, order confirmations and dispatch notices to customers on WhatsApp, and keep the replies attached to the job.",
+    points: [
+      "Message templates for every stage",
+      "Replies saved against the order",
+      "No separate tool to switch to",
+    ],
+    mockupTitle: "WhatsApp: Mehta Auto Parts",
+    mockupLines: [
+      { label: "Quote sent", value: "10:02" },
+      { label: "Customer approved", value: "10:41" },
+      { label: "Work order created", value: "10:41" },
+      { label: "Dispatch notice", value: "Tomorrow" },
+    ],
+  },
+];
+
+export const comparisonRows = [
+  { capability: "Quotes with live BOM costing", spreadsheets: "partial", genericCrm: "no", kanchanflow: "yes" },
+  { capability: "Quote converts to work order", spreadsheets: "no", genericCrm: "no", kanchanflow: "yes" },
+  { capability: "Shop-floor pipeline board", spreadsheets: "no", genericCrm: "partial", kanchanflow: "yes" },
+  { capability: "WhatsApp customer updates", spreadsheets: "no", genericCrm: "partial", kanchanflow: "yes" },
+  { capability: "Mobile app for the shop floor", spreadsheets: "partial", genericCrm: "partial", kanchanflow: "yes" },
+  { capability: "Built for manufacturing terms", spreadsheets: "partial", genericCrm: "no", kanchanflow: "yes" },
+] as const;
