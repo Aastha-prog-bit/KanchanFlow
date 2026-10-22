@@ -7,8 +7,12 @@ import {
   MessageCircle,
   BarChart3,
   Smartphone,
+  Cog,
+  Factory,
+  Wrench,
+  Package,
+  Zap,
 } from "lucide-react";
-
 export const features = [
   {
     title: "Quote to order",
@@ -68,5 +72,39 @@ export const homeFaqs = [
     question: "Is there a free trial?",
     answer:
       "Every plan starts with a 14-day free trial. No credit card is needed to begin.",
+  },
+];
+export const industries = [
+  { name: "CNC machining", icon: Cog },
+  { name: "Metal fabrication", icon: Factory },
+  { name: "Tool and die making", icon: Wrench },
+  { name: "Packaging", icon: Package },
+  { name: "Electrical assemblies", icon: Zap },
+];
+
+export const plans = [
+  {
+    name: "Starter",
+    tagline: "For small workshops getting off spreadsheets.",
+    users: "Up to 5 users",
+    monthly: 2999,
+    annual: 2399,
+    highlighted: false,
+  },
+  {
+    name: "Growth",
+    tagline: "For growing factories with a busy shop floor.",
+    users: "Up to 20 users",
+    monthly: 7999,
+    annual: 6399,
+    highlighted: true,
+  },
+  {
+    name: "Enterprise",
+    tagline: "For multi-plant manufacturers with custom needs.",
+    users: "Unlimited users",
+    monthly: null,
+    annual: null,
+    highlighted: false,
   },
 ];
