@@ -27,8 +27,12 @@ export default function Section({
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
         <div className="max-w-2xl">
           {eyebrow && (
-            <p className="text-sm font-semibold uppercase tracking-widest text-gold-dark">
-              {eyebrow}
+            <p
+                className={`text-sm font-semibold uppercase tracking-widest ${
+                    isDark ? "text-gold" : "text-gold-text"
+                }`}
+            >
+            {eyebrow}
             </p>
           )}
           <h2
