@@ -82,32 +82,7 @@ export const industries = [
   { name: "Electrical assemblies", icon: Zap },
 ];
 
-export const plans = [
-  {
-    name: "Starter",
-    tagline: "For small workshops getting off spreadsheets.",
-    users: "Up to 5 users",
-    monthly: 2999,
-    annual: 2399,
-    highlighted: false,
-  },
-  {
-    name: "Growth",
-    tagline: "For growing factories with a busy shop floor.",
-    users: "Up to 20 users",
-    monthly: 7999,
-    annual: 6399,
-    highlighted: true,
-  },
-  {
-    name: "Enterprise",
-    tagline: "For multi-plant manufacturers with custom needs.",
-    users: "Unlimited users",
-    monthly: null,
-    annual: null,
-    highlighted: false,
-  },
-];
+
 export const featureRows = [
   {
     title: "Quote to order in one click",
@@ -187,3 +162,80 @@ export const comparisonRows = [
   { capability: "Mobile app for the shop floor", spreadsheets: "partial", genericCrm: "partial", kanchanflow: "yes" },
   { capability: "Built for manufacturing terms", spreadsheets: "partial", genericCrm: "no", kanchanflow: "yes" },
 ] as const;
+export const plans = [
+  {
+    name: "Starter",
+    tagline: "For small workshops getting off spreadsheets.",
+    users: "Up to 5 users",
+    monthly: 2999,
+    annual: 2399,
+    highlighted: false,
+    cta: "Start free trial",
+    features: [
+      "Quotes with BOM costing",
+      "Quote to work order conversion",
+      "Pipeline board",
+      "Email support",
+    ],
+  },
+  {
+    name: "Growth",
+    tagline: "For growing factories with a busy shop floor.",
+    users: "Up to 20 users",
+    monthly: 7999,
+    annual: 6399,
+    highlighted: true,
+    cta: "Start free trial",
+    features: [
+      "Everything in Starter",
+      "WhatsApp customer updates",
+      "Reports and dashboards",
+      "Mobile app for the shop floor",
+      "Priority support",
+    ],
+  },
+  {
+    name: "Enterprise",
+    tagline: "For multi-plant manufacturers with custom needs.",
+    users: "Unlimited users",
+    monthly: null,
+    annual: null,
+    highlighted: false,
+    cta: "Talk to sales",
+    features: [
+      "Everything in Growth",
+      "Multiple plants and warehouses",
+      "Custom roles and approvals",
+      "Data import and onboarding help",
+      "Dedicated account manager",
+    ],
+  },
+];
+
+export const pricingFaqs = [
+  {
+    question: "How does the 14-day free trial work?",
+    answer:
+      "You get full access to your chosen plan for 14 days. No credit card is needed, and you can import your customers and open quotes while you test.",
+  },
+  {
+    question: "What do I save with annual billing?",
+    answer:
+      "Annual billing gives you 20% off the monthly price. You pay once a year instead of every month.",
+  },
+  {
+    question: "Can I change plans later?",
+    answer:
+      "Yes. You can move up or down between plans at any time, and the difference is adjusted on your next bill.",
+  },
+  {
+    question: "Are prices inclusive of GST?",
+    answer:
+      "Prices shown are before GST. GST is added at checkout and shown on every invoice.",
+  },
+  {
+    question: "Do you offer help moving our data over?",
+    answer:
+      "All plans can import customers, products and quotes from Excel or CSV. Enterprise includes hands-on onboarding.",
+  },
+];
