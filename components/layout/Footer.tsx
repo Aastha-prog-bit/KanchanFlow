@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Twitter, Youtube } from "lucide-react";
+import { FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const footerLinks = [
   {
@@ -30,9 +30,9 @@ const footerLinks = [
 ];
 
 const socials = [
-  { label: "KanchanFlow on LinkedIn", href: "#", Icon: Linkedin },
-  { label: "KanchanFlow on X", href: "#", Icon: Twitter },
-  { label: "KanchanFlow on YouTube", href: "#", Icon: Youtube },
+  { label: "KanchanFlow on LinkedIn", href: "#", Icon: FaLinkedinIn },
+  { label: "KanchanFlow on X", href: "#", Icon: FaXTwitter },
+  { label: "KanchanFlow on YouTube", href: "#", Icon: FaYoutube },
 ];
 
 const focusRing =
@@ -91,7 +91,7 @@ export default function Footer() {
 
       <div className="border-t border-graphite-soft">
         <p className="mx-auto max-w-6xl px-4 py-6 text-sm text-white/60 sm:px-6">
-          © {new Date().getFullYear()} KanchanFlow. All rights reserved.
+           © 2026 KanchanFlow. All rights reserved.
         </p>
       </div>
     </footer>
