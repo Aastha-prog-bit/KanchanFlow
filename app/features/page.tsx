@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+
 import PageHero from "@/components/ui/PageHero";
 import Section from "@/components/ui/Section";
 import CtaBanner from "@/components/ui/CtaBanner";
