@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+T# KanchanFlow Marketing Website
 
-## Getting Started
+Marketing site for KanchanFlow, a manufacturing CRM (quotes, work orders,
+shop-floor pipeline). Built for the Meru Technosoft frontend assignment.
 
-First, run the development server:
+**Live site:** <your Vercel link>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Run locally
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    npm install
+    npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production check: `npm run build` then `npm start`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages
 
-## Learn More
+- Home: hero with pipeline mockup, problem/solution, 6 features, industries,
+  pricing teaser, FAQ, CTA
+- Features: alternating feature rows and a comparison table
+- Pricing: 3 plans with monthly/annual toggle and FAQ
 
-To learn more about Next.js, take a look at the following resources:
+## Tech
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js (App Router), TypeScript, Tailwind CSS, next/font, lucide-react,
+react-icons (brand icons only).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design decisions
 
-## Deploy on Vercel
+- **Colours:** graphite #1C1F23, molten gold #E0A526, light steel #E8EBEF.
+  Gold on dark for emphasis, dark text on gold buttons for contrast.
+  A darker gold (#8A6210) is used for small text on light backgrounds.
+- **Fonts:** Barlow Condensed for headings (industrial, bold) and Inter for body.
+- **Style:** hard edges, thin gold rules, alternating dark/light sections,
+  no gradients, to fit an industrial B2B tone.
+- **Content:** all copy lives in `lib/data.ts` so components stay clean.
+- **Accessibility:** semantic landmarks, one h1 per page, skip link,
+  keyboard-usable menu, FAQ accordion and billing switch, visible focus states,
+  sr-only text for icon-only table cells, prefers-reduced-motion respected.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Assumptions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Plan prices are placeholders I invented.
+- Buttons with `#` links and social links are placeholders.
+- Product screens are built with HTML/CSS instead of screenshots.
+- Copyright year is written as text because of Next.js Cache Components rules.
+
+## With more time
+
+- Add real photography with next/image
+- Dark mode toggle and page transitions
+- Working demo/contact form with validation and a success state
+- Lighthouse screenshots for every page
+
+## Lighthouse (mobile)
+
+Screenshot: `lighthouse.png`
