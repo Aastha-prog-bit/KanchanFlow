@@ -8,7 +8,7 @@ type CardProps = {
 
 export default function Card({ title, icon: Icon, children }: CardProps) {
   return (
-    <article className="border-t-4 border-gold bg-white p-6 transition-transform hover:-translate-y-1">
+    <article className="border-t-4 border-gold bg-white p-6 text-graphite transition-transform hover:-translate-y-1">
       {Icon && (
         <Icon size={28} className="text-gold-dark" aria-hidden="true" />
       )}
