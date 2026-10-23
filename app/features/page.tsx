@@ -6,14 +6,18 @@ import FeatureRow from "@/components/features/FeatureRow";
 import ComparisonTable from "@/components/features/ComparisonTable";
 import { featureRows } from "@/lib/data";
 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Features",
+  title: {
+    absolute: "KanchanFlow | CRM for Manufacturers",
+  },
   description:
-    "Explore KanchanFlow features: quote-to-order, BOM management, sales pipeline, WhatsApp updates, reports and a mobile app for manufacturers.",
+    "KanchanFlow keeps quotes, bills of materials and work orders in one pipeline, so your sales team and shop floor see the same job status.",
   openGraph: {
-    title: "KanchanFlow Features",
+    title: "KanchanFlow | CRM for Manufacturers",
     description:
-      "Quotes, BOMs, pipeline and WhatsApp updates in one CRM built for manufacturers.",
+      "From quote to dispatch, without the chasing. A CRM built for manufacturers.",
   },
 };
 
